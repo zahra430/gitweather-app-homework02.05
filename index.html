@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo◄30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/3b0af9c8e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <form class="row" id="search-city">
+          <div class="col-4 offset-md-3 insert">
+            <input
+              type="text"
+              class="inputcity"
+              id="input-city"
+              placeholder="Type a city..."
+            />
+          </div>
+
+          <div class="col-3">
+            <button type="submit" class="search">🔍</button>
+          </div>
+        </form>
+      </div>
+
+      <span class="background"><strong>currently</strong></span>
+      <div class="degree" id="user-degree"><strong></strong></div>
+
+      <h4 class="naghadeh" id="naghadeh-city"></h4>
+
+      <br />
+      <span class="now" id="current-time">Today</span>
+      <div class="current-city" id="current-city"></div>
+
+      <div class="sun">🌤️</div>
+
+      <div class="container fore">
+        <div class="row">
+          <div class="col-2 offset-md-1">
+            🌤️ <br />
+            60°<br />
+
+            Sat
+          </div>
+          <div class="col-2">
+            🌤️ <br />
+            60°<br />
+            Sun
+          </div>
+          <div class="col-2">
+            ⛅ <br />
+            50°<br />
+            Mon
+          </div>
+          <div class="col-2">
+            ⛅ <br />
+            450°<br />
+            Tue
+          </div>
+          <div class="col-2">
+            ⛈️ <br />
+            40°<br />
+
+            Wed
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
+    <script src="src/index.js"></script>
+  </body>
+</html>
